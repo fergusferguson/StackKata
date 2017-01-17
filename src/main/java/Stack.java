@@ -20,4 +20,5 @@ public class Stack {
     public void push(Object pushed) {
         this.pushed.add(pushed);
     }
+    
 }
