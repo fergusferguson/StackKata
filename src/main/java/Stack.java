@@ -6,11 +6,11 @@ public class Stack {
 
     private List<Object> pushed = new ArrayList<Object>();
 
-    public Object pop(){
-        if (isEmpty()){
+    public Object pop() {
+        if (isEmpty()) {
             throw new IllegalArgumentException("you can not pop an empty stack");
         }
-        return pushed.remove(pushed.size()-1);
+        return pushed.remove(pushed.size() - 1);
     }
 
     private boolean isEmpty() {
@@ -20,5 +20,5 @@ public class Stack {
     public void push(Object pushed) {
         this.pushed.add(pushed);
     }
-    
+
 }

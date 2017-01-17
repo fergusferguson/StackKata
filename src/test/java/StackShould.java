@@ -1,4 +1,3 @@
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -6,7 +5,7 @@ import org.junit.rules.ExpectedException;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.junit.rules.ExpectedException.*;
+import static org.junit.rules.ExpectedException.none;
 
 
 public class StackShould {
@@ -30,7 +29,7 @@ public class StackShould {
     }
 
     @Test
-    public void pop_last_pushed_object(){
+    public void pop_last_pushed_object() {
         Object pushed = "pushed";
         stack.push(pushed);
 
@@ -40,7 +39,7 @@ public class StackShould {
     }
 
     @Test
-    public void pop_objects_in_reverse_push_order(){
+    public void pop_objects_in_reverse_push_order() {
         Object firstPushed = "first pushed";
         Object lastPushed = "last pushed";
 
